@@ -4,8 +4,6 @@
 <script>
 function myFunction(userChoice) {
 
-	document.getElementById('user').innerHTML = "Copy the text from the image into the box yo"+userChoice;
-
 	var computerChoice = Math.random();
 	
 	if (computerChoice <= 0.25) 
@@ -33,20 +31,9 @@ function myFunction(userChoice) {
 
 <body>
 
-<h2>JavaScript rockpaperscissors</h2>
+<h2>Copy the text from the image into the box yo</h2>
 
-
-
-
-<button onclick="myFunction('rock')">rock</button>
-<button onclick="myFunction('paper')">paper</button>
-<button onclick="myFunction('scissors')">scissors</button>
-
-<p id="user"></p>
-<p id="dbg"></p>
-<p id="opp"></p>
-<p id="win"></p>
-
+<input type="radio" onclick="myFunction('rock')"></input>
 
 </body>
 </html>
