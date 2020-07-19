@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction(userChoice) {
+
+	document.getElementById('user').innerHTML = "you chose...&nbsp;"+userChoice;
+
+	var computerChoice = Math.random();
+
+	//document.getElementById('opp').innerHTML = computerChoice;
+	
+	if (computerChoice < 0.34) 
+	{
+	  document.getElementById('opp').innerHTML = "Opponent chose rock!&nbsp;";
+	  if (userChoice === "rock")
+	  {
+	  document.getElementById('win').innerHTML = "it was a tie!";
+	  }
+	  else if (userChoice === "paper")
+	  {
+		document.getElementById('win').innerHTML = "u win good job";
+	  }
+	  else if (userChoice === "scissors")
+	  {
+		document.getElementById('win').innerHTML = "you loose";
+	  }
+	  else
+	  {
+		document.getElementById('win').innerHTML = "i said type ROCK, PAPER OR SCISSORS!!!!!!";
+	  }
+	}
+	else if (computerChoice > 0.67)
+	{
+	  document.getElementById('opp').innerHTML = "Opponent chose scissors";
+	  if (userChoice === "scissors")
+	  {
+	  document.getElementById('win').innerHTML = "it was a tie!";
+	  }
+	  else if (userChoice === "rock")
+	  {
+		document.getElementById('win').innerHTML = "u win good job";
+	  }
+	  else if (userChoice === "paper")
+	  {
+		document.getElementById('win').innerHTML = "you loose";
+	  }
+	  else
+	  {
+		document.getElementById('win').innerHTML = "i said type ROCK, PAPER OR SCISSORS!!!!!!";
+	  }
+	}
+	else
+	{
+	  document.getElementById('opp').innerHTML = "Opponent chose paper";
+	  if (userChoice === "paper")
+	  {
+		document.getElementById('win').innerHTML = "it was a tie!";
+	  }
+	  else if (userChoice === "scissors")
+	  {
+		document.getElementById('win').innerHTML = "u win good job";
+	  }
+	  else if (userChoice === "rock")
+	  {
+		document.getElementById('win').innerHTML = "you loose";
+	  }
+	  else
+	  {
+		document.getElementById('win').innerHTML = "i said type ROCK, PAPER OR SCISSORS!!!!!!";
+	  }
+	}
+}
+</script>
+</head>
+
+
+
+
+<body>
+
+<h2>JavaScript rockpaperscissors</h2>
+
+
+
+
+<button onclick="myFunction('rock')">rock</button>
+<button onclick="myFunction('paper')">paper</button>
+<button onclick="myFunction('scissors')">scissors</button>
+
+<p id="user"></p>
+<p id="dbg"></p>
+<p id="opp"></p>
+<p id="win"></p>
+
+
+</body>
+</html>
