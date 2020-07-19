@@ -10,7 +10,7 @@ function myFunction(userChoice) {
 
 	//document.getElementById('opp').innerHTML = computerChoice;
 	
-	if (computerChoice < 0.34) 
+	if (computerChoice <= 0.25) 
 	{
 	  document.getElementById('opp').innerHTML = "Opponent chose rock!&nbsp;";
 	  if (userChoice === "rock")
@@ -26,7 +26,7 @@ function myFunction(userChoice) {
 		document.getElementById('win').innerHTML = "you loose";
 	  }
 	}
-	else if (computerChoice > 0.67)
+	else if (computerChoice > 0.25 && computerChoice <= 0.50)
 	{
 	  document.getElementById('opp').innerHTML = "Opponent chose scissors";
 	  if (userChoice === "scissors")
@@ -34,6 +34,22 @@ function myFunction(userChoice) {
 	  document.getElementById('win').innerHTML = "it was a tie!";
 	  }
 	  else if (userChoice === "rock")
+	  {
+		document.getElementById('win').innerHTML = "u win good job";
+	  }
+	  else
+	  {
+		document.getElementById('win').innerHTML = "you loose";
+	  }
+	}
+	else if (computerChoice > 0.50 && computerChoice <= 0.75)
+	{
+	  document.getElementById('opp').innerHTML = "Opponent chose paper";
+	  if (userChoice === "paper")
+	  {
+		document.getElementById('win').innerHTML = "it was a tie!";
+	  }
+	  else if (userChoice === "scissors")
 	  {
 		document.getElementById('win').innerHTML = "u win good job";
 	  }
