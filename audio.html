@@ -6,21 +6,13 @@ function myFunction(userChoice) {
 
 	var computerChoice = Math.random();
 	
-	if (computerChoice <= 0.25) 
+	if (computerChoice < 0.5 ) 
 	{
-
-	}
-	else if (computerChoice > 0.25 && computerChoice <= 0.50)
-	{
-
-	}
-	else if (computerChoice > 0.50 && computerChoice <= 0.75)
-	{
-
+	var sound = "audio1"
 	}
 	else
 	{
-
+	var sound = "audio2"
 	}
 }
 </script>
@@ -31,7 +23,7 @@ function myFunction(userChoice) {
 
 <body>
 
-<h1>Copy the text from the image into the box</h1>
+<h1>Copy what you hear into the box</h1>
 <a href="index.html">(or press this link if you are deaf and cannot hear cool noise)<br><br></a>
 
 <input type="text">

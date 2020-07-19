@@ -2,36 +2,43 @@
 <html>
 <head>
 <script>
-var computerChoice = Math.random();
+function myFunction() {
 
-if (computerChoice <= 0.25) 
-{
+	var computerChoice = Math.random();
 
-}
-else if (computerChoice > 0.25 && computerChoice <= 0.50)
-{
-
-}
-else if (computerChoice > 0.50 && computerChoice <= 0.75)
-{
-
-}
-else
-{
-
+	if (computerChoice <= 0.25) 
+	{
+		var image = "img1";
+		document.getElementById("myImg").src = "img1.png";
+	}
+	else if (computerChoice > 0.25 && computerChoice <= 0.50)
+	{
+		var image = "img2";
+		document.getElementById("myImg").src = "img2.png";
+	}
+	else if (computerChoice > 0.50 && computerChoice <= 0.75)
+	{
+		var image = "img3";
+		document.getElementById("myImg").src = "img3.png";
+	}
+	else
+	{
+		var image = "img4";
+		document.getElementById("myImg").src = "img4.png";
+	}
 }
 </script>
 </head>
 
+<body onload="myFunction()">
 
-
-
-<body>
 
 <h1>Copy the text from the image into the box</h1>
-<a href="audio.html">(or press this link if you are blind and cannot answer the captcha)<br><br></a>
+<a href="audio.html">(or press this link if you have no eyes)<br><br></a>
 
-<input type="text">
+
+<img id="myImg" src="frog.gif">
+
 
 </body>
 </html>
