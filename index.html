@@ -33,32 +33,42 @@ function myFunction() {
 function answer() {
 
 	var answer = prompt("Copy the text from the image into the box");
+	var rng = Math.random();
+	if (rng <= 0.5)
+	{
+		var destination = "nice.html";
+	}
+	else
+	{
+		var destination = "cinnamoroll.html";
+	}
+	
 	if (image = "img1")
 	{
 		if (answer === "no moners")
 		{
-		window.location.href = "nice.html";
+		window.location.href = destination;
 		}
 	}
 	if (image = "img2")
 	{
 		if (answer === "wow 24 gugungayns")
 		{
-		window.location.href = "nice.html";
+		window.location.href = destination;
 		}
 	}
 	if (image = "img3")
 	{
 		if (answer === "la creatura")
 		{
-		window.location.href = "nice.html";	
+		window.location.href = destination;	
 		}
 	}
 	if (image = "img4")
 	{
 		if (answer === "gwa gwa")
 		{
-		window.location.href = "nice.html";	
+		window.location.href = destination;	
 		}
 	}
 }
