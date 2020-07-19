@@ -3,7 +3,7 @@
 <head>
 <script>
 function myFunction() {
-
+	
 	var computerChoice = Math.random();
 
 	if (computerChoice <= 0.25) 
@@ -28,17 +28,53 @@ function myFunction() {
 	}
 }
 </script>
+<script>
+
+function answer() {
+
+	var answer = prompt("Copy the text from the image into the box");
+	if (image = "img1")
+	{
+		if (answer = "no moners")
+		{
+		window.location.href = "nice.html";
+		}
+	}
+	if (image = "img2")
+	{
+		if (answer = "wow 24 gugungayns")
+		{
+		window.location.href = "nice.html";
+		}
+	}
+	if (image = "img3")
+	{
+		if (answer = "la creatura")
+		{
+		window.location.href = "nice.html";	
+		}
+	}
+	if (image = "img4")
+	{
+		if (answer = "gwa gwa")
+		{
+		window.location.href = "nice.html";	
+		}
+	}
+}
+</script>
 </head>
 
 <body onload="myFunction()">
 
 
-<h1>Copy the text from the image into the box</h1>
-<a href="audio.html">(or press this link if you have no eyes)<br><br></a>
+
+<!--<a> href="audio.html">(or press this link if you have no eyes)<br><br></a>-->
 
 
 <img id="myImg" src="frog.gif">
-
+<br>
+<button onclick="answer()">answer</button>
 
 </body>
 </html>
