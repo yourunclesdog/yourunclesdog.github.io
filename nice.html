@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>nice</h1>
+<head>
+<script>
+function myFunction() {
+document.getElementById("iphone").src = "iphone.png";
+document.getElementById("text").src = "le gumba.png";
+}
+</script>
+</head>
+<body onload="setTimeout(myFunction, 600)">
+<img id="iphone" src="none.png">
+<br>
+<img id="plop" src="plop.png">
+<br>
+<img id="text" src="none.png">
+<br>
+<br>
+<audio id="myAudio" controls autoplay>
+  <source src="gumba.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html>
-	
