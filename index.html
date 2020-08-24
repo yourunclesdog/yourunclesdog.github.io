@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="icon.ico">
+<script>
+function myFunction() {
+	
+	var computerChoice = Math.random();
+
+	if (computerChoice <= 0.25) 
+	{
+		var image = "img1";
+		document.getElementById("myImg").src = "header.gif";
+	}
+	else if (computerChoice > 0.25 && computerChoice <= 0.50)
+	{
+		var image = "img2";
+		document.getElementById("myImg").src = "header2.gif";
+	}
+	else if (computerChoice > 0.50 && computerChoice <= 0.75)
+	{
+		var image = "img3";
+		document.getElementById("myImg").src = "header3.gif";
+	}
+	else
+	{
+		var image = "img4";
+		document.getElementById("myImg").src = "header4.gif";
+	}
+}
+</script>
 <style>
-h2	{
-text-align: center;
-  color: white;
-margin: auto;
-width: 8%;
-  background-color: black;
-  opacity: 1;
-}	
-h3	{
-text-align: center;
-  color: white;
-margin: auto;
-width: 10%;
-  background-color: green;
-  opacity: 1;
+body {
+	background-image: url("iconss.png");
+	opacity: 1;
 }
 h1	{
-text-align: center;
-  color: black;
-margin: auto;
+  text-align: center;
+  color: #2A4747;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 70%;
+  background-color: #BFBFBF;
+  opacity: 1;
+}	
+div	{
+  text-align: center;
+  color: #2A4747;
+  margin: auto;
+  width: 70%;
+  background-color: #BFBFBF;
+  opacity: 1;
+}		
+img	{
+  margin-top: 5px;
+  opacity: 1.0;
   background-color: white;
-  opacity: 1;
 }
-h4	{
-text-align: center;
-margin: auto;
-  color: white;
-	width: 5%;
-  background-color: orange;
-  opacity: 1;
+img.resize	{
+  max-width:30%;
+  max-height:30%;
 }
-h5	{
-text-align: center;
-margin: auto;
-  color: white;
-	width: 7%;
-  background-color: yellow;
-  opacity: 1;
+
+p.thing	{
+  opacity: 1.0;
+  background-color: #A0A0A0;
 }
+
 </style>
-<script>
-</script>
 </head>
-<body>
-<h1>
-MY WEBSITE
+<body onload="myFunction()">
+<h1><img src="" id="myImg">
+<p class="thing" ><a href="https://twitter.com/liskeii">TWITTER</a> <a href="https://www.youtube.com/channel/UCMWQ5uz__91i2NwNCWQPh4Q">YOUTUBE</a> <a href="https://yourunclesdog.github.io/index_old.html">OMAKE</a></p>
 </h1>
-<h2>
-<marquee behavior="alternate" direction="left" scrollamount="1">
-<a href="https://yourunclesdog.github.io/yooba.html">Yooba Zone</a>
-</marquee>
-</h2>
-<h3>
-<marquee behavior="alternate" direction="right" scrollamount="1">
-<a href="https://yourunclesdog.github.io/arugula.html">Arugula Propoganda</a>
-</marquee>
-</h3>
-<h4>
-<marquee behavior="alternate" direction="left" scrollamount="1">
-<a href="https://yourunclesdog.github.io/pub.html">Qwonk Pub</a>
-</marquee>
-</h4>
-<h5>
-<marquee behavior="alternate" direction="left" scrollamount="1">
-<a href="https://yourunclesdog.github.io/challenging.html">Challenging Quiz</a>
-</marquee>
-</h5>
+<div>
+<p>Now, I couldn't care less about petty trivial matters such as OOOH SHE HAS A BOOOYFRIEND OR OOOOH PEOPLE SIMP FOR HERRR. Those are stupid, trivial matters that mean nothing to INTELLECTUALS like myself. HOWEVER. I still think that she deserves to be cancelled. Why, you may ask?? The answer is surprisingly obvious.</p>
+<h3></h3>
+</div>
 </body>
 </html>
