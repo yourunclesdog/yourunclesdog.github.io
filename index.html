@@ -28,6 +28,29 @@ function myFunction() {
 		document.getElementById("myImg").src = "header4.gif";
 	}
 }
+
+function twton()	{
+	document.getElementById("twtbutton").src = "button1.gif";
+}
+
+function twtoff()	{
+	document.getElementById("twtbutton").src = "button1.png";
+}
+
+function yton()	{
+	document.getElementById("ytbutton").src = "button2.gif";
+}
+
+function ytoff()	{
+	document.getElementById("ytbutton").src = "button2.png";
+}
+function exton()	{
+	document.getElementById("extbutton").src = "button3.gif";
+}
+
+function extoff()	{
+	document.getElementById("extbutton").src = "button3.png";
+}
 </script>
 <style>
 body {
@@ -43,17 +66,26 @@ h1	{
   width: 70%;
   background-color: #BFBFBF;
   opacity: 1;
-}	
+}
 div	{
   text-align: center;
-  color: #2A4747;
+  color: #060d35;
   margin: auto;
   width: 70%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: #BFBFBF;
   opacity: 1;
 }		
+img.post	{
+  margin-top: 10px;
+  opacity: 1.0;
+  background-color: white;
+  height: 30%;
+  width: 30%;
+}
 img	{
-  margin-top: 5px;
+  margin-top: 10px;
   opacity: 1.0;
   background-color: white;
 }
@@ -64,18 +96,30 @@ img.resize	{
 
 p.thing	{
   opacity: 1.0;
+  margin-top: 0px;
   background-color: #A0A0A0;
 }
+
 
 </style>
 </head>
 <body onload="myFunction()">
 <h1><img src="" id="myImg">
-<p class="thing" ><a href="https://twitter.com/liskeii">TWITTER</a> <a href="https://www.youtube.com/channel/UCMWQ5uz__91i2NwNCWQPh4Q">YOUTUBE</a> <a href="https://yourunclesdog.github.io/index_old.html">OMAKE</a></p>
+<p class="thing" ><a href="https://twitter.com/liskeii"><img class="twtbutton" onmouseover="twton()" onmouseout="twtoff()" id="twtbutton" src="button1.png"></a> <a><img src="button2.png" id="ytbutton" onmouseover="yton()" onmouseout="ytoff()"></a> <a href="https://yourunclesdog.github.io/index_old.html"><img src="button3.png" id="extbutton" onmouseover="exton()" onmouseout="extoff()"></a></p>
 </h1>
 <div>
-<p>Now, I couldn't care less about petty trivial matters such as OOOH SHE HAS A BOOOYFRIEND OR OOOOH PEOPLE SIMP FOR HERRR. Those are stupid, trivial matters that mean nothing to INTELLECTUALS like myself. HOWEVER. I still think that she deserves to be cancelled. Why, you may ask?? The answer is surprisingly obvious.</p>
-<h3></h3>
+<h2>24/08/2020 12:12</h2>
+<img class="post" src="computerr.gif">
+<p>COM PUTER AAAAAAAA</p>
+</div>
+<div>
+<h2>24/08/2020 12:01</h2>
+<img class="post" src="freeze.gif">
+<p>I PUT SOMETHING HERE</p>
+</div>
+<div>
+<h2>24/08/2020 11:07</h2>
+<p>I AM GOING TO PUT SOMETHING HERE</p>
 </div>
 </body>
 </html>
