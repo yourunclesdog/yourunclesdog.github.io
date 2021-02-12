@@ -15,7 +15,7 @@ f.close()
 f = open("index.html", "r")
 empty = 0
 startoffile = ""
-while empty != 125:
+while empty != 124:
     startoffile = startoffile + f.readline()
     empty = empty + 1
 endoffile = f.read()
