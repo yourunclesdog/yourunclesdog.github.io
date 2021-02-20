@@ -10,24 +10,19 @@
 }
 
 .column {
-  float: left;
-  width: 30%;
+  float: right;
+  width: 50%;
   padding: 10px;
   height: auto;
+  display: inline-block;
 }
 
 .midcolumn {
   float: left;
-  width: 40%;
+  width: 100%;
   padding: 10px;
-  height: auto;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .center {
   display: block;
   margin-left: auto;
@@ -77,7 +72,12 @@ a:active{
 </style>
 </head>
 <body>
-<audio id="myAudio" src="th2mk.mp3" autoplay="" volume = 0.1></audio>
+<audio id="myAudio" src="../th2mk.mp3" autoplay="" volume = 0.1></audio>
+<div class="midcolumn" style="background-color:#0027FB;">
+  <div class="center" style="width:80%;background-color:black">
+    <h1 class="center" id="datetime" style="width:75%"> coming soon! </h1>
+    <img src="../Centreimage.png" class="center" style="width:75%">
+  </div>
 <div class="row">
   <div class="column" style="background-color:black;">
     <a class="rshift" href="posts"><p>[Posts]</p></a>
@@ -85,11 +85,6 @@ a:active{
     <a class="rshift" href="about"><p>[About]</p></a>
     <a class="rshift" href="amogus"><p>[Among Us]</p></a>
   </div>
-  <div class="midcolumn" style="background-color:#0027FB;">
-    <div class="center" style="width:80%;background-color:black">
-      <h1 class="center" id="datetime" style="width:75%"> coming soon! </h1>
-      <img src="Centreimage.png" class="center" style="width:75%">
-    </div>
   </div>
   <div class="column" style="background-color:black;">
     <a class="lshift" href="twitter"><p>[Twitter]</p></a>
