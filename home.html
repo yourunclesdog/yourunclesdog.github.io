@@ -2,21 +2,23 @@
 <html>
 <head>
 <style>
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 * {
   box-sizing: border-box;
-    background-color: black;
+  background-color: black;
 }
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 30%;
   padding: 10px;
-  height: 300px;
+  height: auto;
+}
+
+.midcolumn {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: auto;
 }
 
 .row:after {
@@ -30,42 +32,69 @@
   margin-right: auto;
 }
 @font-face {
-    font-family: "PC98";
-    src: url("PC98.ttf");
+  font-family: "PC98";
+  src: url("PC98.ttf");
+}
+body {
+  font-family: 'PC98', Arial, sans-serif;
 }
 h1  {
-    font-family: 'PC98', Arial, sans-serif;
-    font-weight:normal;
-    font-style:normal;
-    font-size: 150%;
-    color: white;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 150%;
+  color: white;
+  border-style: solid;
 }
 img {
   image-rendering: pixelated;
   max-width: 100%;
   height: auto;
+  border-style: solid;
+  border-color: white;
 }
-p {
+a {
   color: white;
-  background-color: white;
+  background-color: black;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 150%;
+  text-decoration:none;
+}
+a:hover{
+  color: #fffd33;
+}
+a:active{
+  color: #00fcfe;
+}
+a:visited {
+  color: white;
+}
+.lshift {
+  text-align: left;
+}
+.rshift {
+  text-align: right;
 }
 </style>
 </head>
 <body>
+<audio src="th2mk.mp3" autoplay=""></audio>
 <div class="row">
   <div class="column" style="background-color:black;">
-
+    <a class="rshift"><p>[Test]</p></a>
   </div>
-  <div class="column" style="background-color:#0027FB;">
+  <div class="midcolumn" style="background-color:#0027FB;">
+    <div class="center" style="width:80%;background-color:black">
       <h1 class="center" id="datetime" style="width:75%"> coming soon! </h1>
       <img src="Centreimage.png" class="center" style="width:75%">
+    </div>
   </div>
   <div class="column" style="background-color:black;">
-
+    <a class="lshift" href="twitter"><p>[Twitter]</p></a>
+    <a class="lshift" href="youtube"><p>[Youtube]</p></a>
+    <a class="lshift" href="mailto:yourunclesdog@gmail.com"><p>[Email Me]</p></a>
+    <a class="lshift" href="oldsite/index"><p>[Old Site]</p></a>
   </div>
-</div>
-<div>
-<p>aaaa</p>
 </div>
 <script>
 setInterval(function() {
