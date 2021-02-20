@@ -4,7 +4,7 @@ now = datetime.now()
 print("now =", now)
 dt_string = now.strftime("%d/%m/%Y %H:%M")
 
-f = open("index.html", "r")
+f = open("posts.html", "r")
 makebackup = f.read()
 f.close()
 
@@ -12,10 +12,10 @@ f = open("backup.html", "w")
 f.write(makebackup)
 f.close()
 
-f = open("index.html", "r")
+f = open("posts.html", "r")
 empty = 0
 startoffile = ""
-while empty != 124:
+while empty != 79:
     startoffile = startoffile + f.readline()
     empty = empty + 1
 endoffile = f.read()
@@ -23,7 +23,7 @@ print(startoffile)
 print(endoffile)
 f.close()
 
-f = open("index.html", "w")
+f = open("posts.html", "w")
 message = input("What would you like to post? ")
 imageyn = input("Would you like to post an image y/n ? ")
 if imageyn == "y":
