@@ -32,31 +32,46 @@
 @font-face {
     font-family: "PC98";
     src: url("PC98.ttf");
-}   
+}
 h1  {
     font-family: 'PC98', Arial, sans-serif;
     font-weight:normal;
     font-style:normal;
-    font-size: 25px;
+    font-size: 150%;
     color: white;
 }
 img {
   image-rendering: pixelated;
+  max-width: 100%;
+  height: auto;
+}
+p {
+  color: white;
+  background-color: white;
 }
 </style>
 </head>
 <body>
 <div class="row">
-  <div class="column" style="background-color:#000000;">
-      
+  <div class="column" style="background-color:black;">
+
   </div>
   <div class="column" style="background-color:#0027FB;">
-      <h1 class="center" style="width:75%"> coming soon! </h1>
+      <h1 class="center" id="datetime" style="width:75%"> coming soon! </h1>
       <img src="Centreimage.png" class="center" style="width:75%">
   </div>
-  <div class="column" style="background-color:#000000;">
+  <div class="column" style="background-color:black;">
 
   </div>
 </div>
+<div>
+<p>aaaa</p>
+</div>
+<script>
+setInterval(function() {
+  var d = new Date()
+  document.getElementById("datetime").innerHTML = d.toUTCString();
+})
+</script>
 </body>
 </html>
