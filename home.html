@@ -78,10 +78,10 @@ a:visited {
 </style>
 </head>
 <body>
-<audio src="th2mk.mp3" autoplay=""></audio>
+<audio id="myAudio" src="th2mk.mp3" autoplay="" volume = 0.1></audio>
 <div class="row">
   <div class="column" style="background-color:black;">
-    <a class="rshift"><p>[Test]</p></a>
+    <a class="rshift"><p>[This]</p></a>
   </div>
   <div class="midcolumn" style="background-color:#0027FB;">
     <div class="center" style="width:80%;background-color:black">
@@ -97,6 +97,7 @@ a:visited {
   </div>
 </div>
 <script>
+document.getElementById("myAudio").volume = 0.3;
 setInterval(function() {
   var d = new Date()
   document.getElementById("datetime").innerHTML = d.toUTCString();
