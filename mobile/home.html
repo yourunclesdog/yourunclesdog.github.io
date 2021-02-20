@@ -9,6 +9,12 @@
   background-color: black;
 }
 
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
+
 .column {
   float: right;
   width: 50%;
@@ -28,6 +34,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 @font-face {
   font-family: "PC98";
   src: url("PC98.ttf");
@@ -78,13 +85,12 @@ a:active{
     <h1 class="center" id="datetime" style="width:75%"> coming soon! </h1>
     <img src="../Centreimage.png" class="center" style="width:75%">
   </div>
-<div class="row">
+<div class="row center">
   <div class="column" style="background-color:black;">
     <a class="rshift" href="posts"><p>[Posts]</p></a>
     <a class="rshift" href="haha"><p>[Drawings]</p></a>
     <a class="rshift" href="about"><p>[About]</p></a>
     <a class="rshift" href="amogus"><p>[Among Us]</p></a>
-  </div>
   </div>
   <div class="column" style="background-color:black;">
     <a class="lshift" href="twitter"><p>[Twitter]</p></a>
@@ -97,7 +103,7 @@ a:active{
 document.getElementById("myAudio").volume = 0.3;
 setInterval(function() {
   var d = new Date()
-  document.getElementById("datetime").innerHTML = d.toUTCString();
+  document.getElementByClass("datetime").innerHTML = d.toUTCString();
 })
 </script>
 </body>
