@@ -2,10 +2,46 @@
 <html>
 <head>
 <style>
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+    background-color: black;
+}
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 </head>
 <body>
+<div class="row">
+  <div class="column" style="background-color:#aaaaaa;">
+      
+  </div>
+  <div class="column" style="background-color:#bbbbbb;">
+      <img src="Centreimage.png" class="center" style="width:75%">
+  </div>
+  <div class="column" style="background-color:#aaaaaa;">
 
+  </div>
+</div>
 </body>
 </html>
